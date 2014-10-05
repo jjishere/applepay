@@ -14,6 +14,9 @@
 		84FD2B3219E1EF560061D8A1 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 84FD2B3119E1EF560061D8A1 /* Images.xcassets */; };
 		84FD2B3519E1EF560061D8A1 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 84FD2B3319E1EF560061D8A1 /* LaunchScreen.xib */; };
 		84FD2B4119E1EF560061D8A1 /* ApplePayExampleTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 84FD2B4019E1EF560061D8A1 /* ApplePayExampleTests.m */; };
+		84FD2B4C19E1F0090061D8A1 /* ApplePayBTN_34pt__white_logo_@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = 84FD2B4B19E1F0090061D8A1 /* ApplePayBTN_34pt__white_logo_@3x.png */; };
+		84FD2B4E19E1F05B0061D8A1 /* ApplePayBTN_34pt__white_logo_@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 84FD2B4D19E1F05B0061D8A1 /* ApplePayBTN_34pt__white_logo_@2x.png */; };
+		84FD2B5019E1F0D10061D8A1 /* PassKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 84FD2B4F19E1F0D10061D8A1 /* PassKit.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -40,6 +43,9 @@
 		84FD2B3A19E1EF560061D8A1 /* ApplePayExampleTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ApplePayExampleTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		84FD2B3F19E1EF560061D8A1 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		84FD2B4019E1EF560061D8A1 /* ApplePayExampleTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ApplePayExampleTests.m; sourceTree = "<group>"; };
+		84FD2B4B19E1F0090061D8A1 /* ApplePayBTN_34pt__white_logo_@3x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "ApplePayBTN_34pt__white_logo_@3x.png"; sourceTree = "<group>"; };
+		84FD2B4D19E1F05B0061D8A1 /* ApplePayBTN_34pt__white_logo_@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "ApplePayBTN_34pt__white_logo_@2x.png"; sourceTree = "<group>"; };
+		84FD2B4F19E1F0D10061D8A1 /* PassKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = PassKit.framework; path = System/Library/Frameworks/PassKit.framework; sourceTree = SDKROOT; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -47,6 +53,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				84FD2B5019E1F0D10061D8A1 /* PassKit.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -81,6 +88,7 @@
 		84FD2B2319E1EF560061D8A1 /* ApplePayExample */ = {
 			isa = PBXGroup;
 			children = (
+				84FD2B4A19E1EFFE0061D8A1 /* Image */,
 				84FD2B2819E1EF560061D8A1 /* AppDelegate.h */,
 				84FD2B2919E1EF560061D8A1 /* AppDelegate.m */,
 				84FD2B2B19E1EF560061D8A1 /* ViewController.h */,
@@ -96,6 +104,7 @@
 		84FD2B2419E1EF560061D8A1 /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
+				84FD2B5119E1F0E80061D8A1 /* Frameworks */,
 				84FD2B2519E1EF560061D8A1 /* Info.plist */,
 				84FD2B2619E1EF560061D8A1 /* main.m */,
 			);
@@ -117,6 +126,23 @@
 				84FD2B3F19E1EF560061D8A1 /* Info.plist */,
 			);
 			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		84FD2B4A19E1EFFE0061D8A1 /* Image */ = {
+			isa = PBXGroup;
+			children = (
+				84FD2B4D19E1F05B0061D8A1 /* ApplePayBTN_34pt__white_logo_@2x.png */,
+				84FD2B4B19E1F0090061D8A1 /* ApplePayBTN_34pt__white_logo_@3x.png */,
+			);
+			name = Image;
+			sourceTree = "<group>";
+		};
+		84FD2B5119E1F0E80061D8A1 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				84FD2B4F19E1F0D10061D8A1 /* PassKit.framework */,
+			);
+			name = Frameworks;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -200,7 +226,9 @@
 			buildActionMask = 2147483647;
 			files = (
 				84FD2B3019E1EF560061D8A1 /* Main.storyboard in Resources */,
+				84FD2B4E19E1F05B0061D8A1 /* ApplePayBTN_34pt__white_logo_@2x.png in Resources */,
 				84FD2B3519E1EF560061D8A1 /* LaunchScreen.xib in Resources */,
+				84FD2B4C19E1F0090061D8A1 /* ApplePayBTN_34pt__white_logo_@3x.png in Resources */,
 				84FD2B3219E1EF560061D8A1 /* Images.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

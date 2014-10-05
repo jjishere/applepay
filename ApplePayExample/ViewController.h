@@ -7,9 +7,16 @@
 //
 
 #import <UIKit/UIKit.h>
+#import <PassKit/PassKit.h>
 
-@interface ViewController : UIViewController
 
+@interface ViewController : UIViewController<PKPaymentAuthorizationViewControllerDelegate>
+
+
+/*
+ * Button events
+ */
+-(IBAction)handlesApplePay:(id)sender;
 
 @end
 
