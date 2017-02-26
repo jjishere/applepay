@@ -30,7 +30,8 @@
  */
 -(void)paymentAuthorizationViewController:(PKPaymentAuthorizationViewController *)controller didAuthorizePayment:(PKPayment *)payment completion:(void (^)(PKPaymentAuthorizationStatus))completion
 {
-    NSLog(@"Payment is authorized");
+
+    
 }
 
 /*
@@ -39,6 +40,7 @@
 -(void)paymentAuthorizationViewControllerDidFinish:(PKPaymentAuthorizationViewController *)controller
 {
     NSLog(@"payment authorize did finish");
+    [self dismissViewControllerAnimated:YES completion:nil];
 }
 
 /*
@@ -62,7 +64,7 @@
         //developer.apple.com
         paymentRequest.merchantIdentifier = @"merchant.com.ApplePay";
         paymentRequest.paymentSummaryItems = summaryItem;
-        paymentRequest.countryCode = @"EN";
+        paymentRequest.countryCode = @"US";
         paymentRequest.currencyCode = @"USD";
         paymentRequest.supportedNetworks = supportPaymentType;
         paymentRequest.merchantCapabilities = PKMerchantCapabilityEMV;
